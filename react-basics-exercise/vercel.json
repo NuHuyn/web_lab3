@@ -3,7 +3,10 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/node"
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
     }
   ],
   "routes": [
@@ -11,13 +14,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "build": {
-    "env": {},
-    "commands": {
-      "install": "npm install",
-      "build": "npm run build"
-    },
-    "outputDirectory": "dist"
-  }
+  ]
 }
