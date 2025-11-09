@@ -1,0 +1,13 @@
+import React from "react";
+import TodoItem from "./TodoItem";
+
+export default function TodoList({ todos, toggleTodo, deleteTodo }) {
+  if (!todos.length) return <p>No todos yet.</p>;
+  return (
+    <ul style={{listStyle: "none", padding:0}}>
+      {todos.map(todo => (
+        <TodoItem key={todo.id} todo={todo} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+      ))}
+    </ul>
+  );
+}

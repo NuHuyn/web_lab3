@@ -1,0 +1,19 @@
+.profile-card {
+   padding: 10px; 
+   border: 1px solid #ccc; 
+   border-radius: 8px;
+    width: 260px;
+   }
+.profile-avatar {
+   border-radius: 50%; 
+   display: block; 
+   margin-bottom: 8px; 
+  }
+.theme-light { 
+  background: #fff; 
+  color: #111;
+ }
+.theme-dark  { 
+  background: #222; 
+  color: #fff; 
+}
