@@ -1,4 +1,4 @@
-/* 
+/*
 import React from "react";
 import UserProfile from "./components/UserProfile";
 import Counter from "./components/Counter";
@@ -25,9 +25,9 @@ function App() {
     </div>
   );
 }
-
 export default App;
 */
+
 
 import React from "react";
 import TodoApp from "./components/TodoApp";
